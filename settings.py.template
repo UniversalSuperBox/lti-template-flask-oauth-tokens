@@ -1,6 +1,8 @@
 # API url and LTI key/secret
 BASE_URL = ''
 API_URL = ''
+LTI_CONSUMER_KEY = ''
+LTI_CONSUMER_SECRET = ''
 
 # generate a secret key with os.urandom(24)
 secret_key = ''
@@ -33,7 +35,7 @@ DATABASE_URIS = {
 PYLTI_CONFIG = {
     'consumers': {
         "key": {
-            "secret": "secret"
+            LTI_CONSUMER_KEY: LTI_CONSUMER_SECRET
         }
     },
     'roles': {
